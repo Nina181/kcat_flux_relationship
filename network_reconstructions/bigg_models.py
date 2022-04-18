@@ -7,7 +7,7 @@ def load_models() -> list:
     """Load genome-scale models and return them in a list."""
 
     models = []
-    path = 'models/saved/best/'
+    path = 'network_reconstructions/saved/best/'
     gems = os.listdir(path)
     for gem in [gems[5]]:
         model, errors = validate_sbml_model(path + gem)
