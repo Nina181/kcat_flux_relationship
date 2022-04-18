@@ -62,7 +62,7 @@ def load_kcat_dataframe(filename: str) -> pd.DataFrame:
         the lineage.
     """
 
-    kcat_df = pd.read_csv('kcat_flux_mapping/kcat_Brenda/' + filename)
+    kcat_df = pd.read_csv('kcat_flux_mapping/kcat_dataset/' + filename)
     kcat_df = kcat_df.drop(kcat_df[kcat_df['BiGG acc'] < 0.8].index)
     kcat_df['BiGG ID'] = kcat_df['BiGG ID'].str.replace('_r', '')
 
