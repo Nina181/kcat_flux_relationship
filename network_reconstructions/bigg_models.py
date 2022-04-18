@@ -23,7 +23,7 @@ def download_models():
     for model in models:
         url = 'http://bigg.ucsd.edu/static/models/'
         r = requests.get(url + model + ".xml.gz", allow_redirects=True)
-        path = 'models/saved/108/'
+        path = 'network_reconstructions/saved/108/'
         with open(path + model + ".xml.gz", 'wb') as f:
             f.write(r.content)
 
