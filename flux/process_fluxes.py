@@ -64,7 +64,7 @@ def get_organisms() -> dict:
     models = [m.split(".")[0] for m in os.listdir('network_reconstructions/saved/best/')]
     d = {}
     for model in models:
-        url = 'https://bigg.ucsd.edu/api/v2/models/' + model
+        url = 'http://bigg.ucsd.edu/api/v2/models/' + model
         result = requests.get(url, allow_redirects=True).json()["organism"]
         if result:
             d[model] = result.split(" ")[0]
