@@ -21,7 +21,7 @@ def download_models():
 
     models = get_models_names()
     for model in models:
-        url = 'https://bigg.ucsd.edu/static/models/'
+        url = 'http://bigg.ucsd.edu/static/models/'
         r = requests.get(url + model + ".xml.gz", allow_redirects=True)
         path = 'models/saved/108/'
         with open(path + model + ".xml.gz", 'wb') as f:
@@ -31,6 +31,6 @@ def download_models():
 def get_models_names() -> list:
     """Get a list of all models in the BiGG Database. """
 
-    url = 'https://bigg.ucsd.edu/api/v2/models'
+    url = 'http://bigg.ucsd.edu/api/v2/models'
     results = requests.get(url, allow_redirects=True).json()["results"]
     return [result["bigg_id"] for result in results]
