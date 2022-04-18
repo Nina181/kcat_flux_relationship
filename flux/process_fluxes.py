@@ -61,7 +61,7 @@ def get_organisms() -> dict:
     import os
     import requests
 
-    models = [m.split(".")[0] for m in os.listdir('models/saved/108/')]
+    models = [m.split(".")[0] for m in os.listdir('network_reconstructions/saved/108/')]
     d = {}
     for model in models:
         url = 'https://bigg.ucsd.edu/api/v2/models/' + model
