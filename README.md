@@ -10,9 +10,12 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#Packages">Packages</a></li>
-        <li><a href="#First use">First use</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#first-use">First use</a></li>
       </ul>
+    </li>
+    <li>
+     <a href="#raw-data">Raw data</a>
     </li>
   </ol>
 </details>
@@ -30,6 +33,8 @@ Source code of the bachelor thesis "Analyzing the Relationship Between Enzyme Tu
 To set up this project locally follow these steps. 
 Python version 3.8 was used for this project.
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ### Packages
 
 Used packages:
@@ -41,6 +46,7 @@ Used packages:
 * scipy==1.4.1
 * requests==2.25.1
   
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ### First use
 
@@ -60,5 +66,12 @@ Used packages:
    ```js
    in method add_lineage() line 94 of the class kcat_flux_mapping.mapping
    ```
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- RAW DATA -->
+## Raw data
+generated minimal environments and predicted fluxes were saved in pickle files. These files 
+were to large to upload and are provided upon request.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
